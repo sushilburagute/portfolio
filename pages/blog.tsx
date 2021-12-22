@@ -17,15 +17,14 @@ export default function Blog({
   return (
     <Container
       title="Blog – Sushil Buragute"
-      description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
+      description="My take on the software industry, programming, tech, design, music, and my personal life."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written ${posts.length} articles on my blog.
+          {`I write about things I learn in Web Development and also stuff that I find interesting., I've written ${posts.length} articles on my blog.
             Use the search below to filter by title.`}
         </p>
         <div className="relative w-full mb-4">

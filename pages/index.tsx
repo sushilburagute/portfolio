@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
 
-export default function Home({ videos }) {
+export default function Home() {
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
@@ -21,8 +21,7 @@ export default function Home({ videos }) {
               A developer with an eye for design.
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Helping developers build a faster web. Teaching about web
-              development, serverless, and React / Next.js.
+              Communicating with Machines using Code and to Humans using Design.
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -78,9 +77,8 @@ export default function Home({ videos }) {
           Projects
         </h3>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Build and deploy a modern SaaS application using the most popular
-          open-source software. This course is 12 hours long and is completely
-          live streamed.
+          Implementing something is the best way to learn something. Here's a
+          few of the project I've implemented to learn a particular tech-stack.
         </p>
 
         <span className="h-16" />

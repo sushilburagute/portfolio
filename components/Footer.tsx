@@ -28,11 +28,6 @@ export default function Footer() {
               About
             </a>
           </Link>
-          <Link href="/newsletter">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              Newsletter
-            </a>
-          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://twitter.com/codetastic1">
@@ -52,6 +47,9 @@ export default function Footer() {
             </a>
           </Link>
         </div>
+      </div>
+      <div className="flex justify-center w-full">
+        <p className="text-gray-500">Portfolio forked from Lee Robinson</p>
       </div>
     </footer>
   );

@@ -12,37 +12,21 @@ export default function About() {
         </h1>
         <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
           <p>
-            Hey, I’m Lee. I'm a developer, writer, and the creator of&nbsp;
-            <a
-              href="https://masteringnextjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mastering Next.js
-            </a>
-            &nbsp;and&nbsp;
-            <a
-              href="https://react2025.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React 2025.
-            </a>
-            &nbsp;I work at ▲Vercel as the Director of Developer Relations.
+            Hey, I’m Sushil. I’m a Developer and a self-taught Designer. The
+            overlap of design and software development has always been
+            fascinating for me and that’s when I had made up my mind and decided
+            to pursue my career in this field.
           </p>
           <p>
-            I’ve spoken across the country at conferences and meet-ups about
-            front-end development, design, and recruiting. I write about
-            development, tech careers, and my personal life on&nbsp;
-            <Link href="/newsletter">
-              <a>my newsletter.</a>
-            </Link>
+            Whenever I’m not coding or subconsciously thinking of a Design, I’m
+            either reading about emerging technologies or helping people code on
+            #teamTanay discord server.
           </p>
           <p>
-            I grew up in small-town Iowa and went to school at Iowa State,
-            graduating with a degree in Computer Engineering. I spend my free
-            time playing music, creating videos, and enjoying time with friends
-            and family in Des Moines, IA.
+            Also I’m fond of Chess, it really pushes my mind to think of the
+            possibility of future moves and that eventually reflects in my work,
+            thinking a couple of steps ahead to solve problems which will later
+            arise.
           </p>
         </div>
         <Timeline />
