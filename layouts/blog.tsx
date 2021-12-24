@@ -53,10 +53,8 @@ export default function BlogLayout({
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
         </div>
-        <div className="mt-8">
-          <Subscribe />
-        </div>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
+
+        <div className="text-sm text-gray-700 dark:text-gray-300 mt-8">
           <a
             href={discussUrl(post.slug)}
             target="_blank"
