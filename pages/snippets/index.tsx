@@ -19,7 +19,10 @@ export default function Snippets({
         <p className="mb-4 text-gray-600 dark:text-gray-400">
           These are a collection of code snippets that I've frequently used.
         </p>
-        <div className="grid w-full grid-cols-1 gap-4 my-2 mt-4 sm:grid-cols-2">
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          Adding these bits soon!🚀
+        </p>
+        {/* <div className="grid w-full grid-cols-1 gap-4 my-2 mt-4 sm:grid-cols-2">
           {snippets.map((snippet) => (
             <FunctionCard
               key={snippet.slug}
@@ -29,7 +32,7 @@ export default function Snippets({
               description={snippet.description}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </Container>
   );

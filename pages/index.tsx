@@ -39,18 +39,18 @@ export default function Home() {
         </h3>
         <div className="flex gap-6 flex-col md:flex-row">
           <BlogPostCard
-            title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-            slug="style-guides-component-libraries-design-systems"
+            title="A Basic Guide for Github Actions"
+            slug="basic-guide-github-action"
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
           <BlogPostCard
-            title="Rust Is The Future of JavaScript Infrastructure"
-            slug="rust"
+            title="Having a Unique Selling Proposition can set you apart"
+            slug="usp-to-set-you-apart"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
           <BlogPostCard
-            title="Past, Present, and Future of React State Management"
-            slug="react-state-management"
+            title="Why I love the Cloud"
+            slug="why-i-love-the-cloud"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
         </div>
@@ -79,6 +79,9 @@ export default function Home() {
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           Implementing something is the best way to learn something. Here's a
           few of the project I've implemented to learn a particular tech-stack.
+        </p>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          Adding these bits soon!🚀
         </p>
 
         <span className="h-16" />
