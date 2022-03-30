@@ -1,4 +1,4 @@
-import { allSnippets } from '.contentlayer/data';
+import { allSnippets } from '.contentlayer/generated';
 import Container from 'components/Container';
 import FunctionCard from 'components/FunctionCard';
 import { pick } from 'lib/utils';
@@ -19,7 +19,7 @@ export default function Snippets({
         <p className="mb-4 text-gray-600 dark:text-gray-400">
           These are a collection of code snippets that I've frequently used.
         </p>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        <p className="mb-4 text-gray-600 dark:text-gray-400">
           Adding these bits soon!🚀
         </p>
         {/* <div className="grid w-full grid-cols-1 gap-4 my-2 mt-4 sm:grid-cols-2">

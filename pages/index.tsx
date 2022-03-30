@@ -3,24 +3,27 @@ import Link from 'next/link';
 
 import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
+import ProjectCard from 'components/ProjectCard';
+import { Ecommerce } from 'components/Icons';
+import { SiTwitter } from 'react-icons/si';
 
 export default function Home() {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
-        <div className="flex flex-col-reverse sm:flex-row items-start">
+      <div className="flex flex-col items-start justify-center max-w-2xl pb-16 mx-auto border-gray-200 dark:border-gray-700">
+        <div className="flex flex-col-reverse items-start sm:flex-row">
           <div className="flex flex-col pr-8">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+            <h1 className="mb-1 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
               Sushil Buragute
             </h1>
-            {/* <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+            {/* <h2 className="mb-4 text-gray-700 dark:text-gray-200">
               Director of Developer Relations at{' '}
               <span className="font-semibold">Vercel</span>
             </h2> */}
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+            <h2 className="mb-4 text-gray-700 dark:text-gray-200">
               A developer with an eye for design.
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
+            <p className="mb-16 text-gray-600 dark:text-gray-400">
               Communicating with Machines using Code and to Humans using Design.
             </p>
           </div>
@@ -34,10 +37,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+        <h3 className="mb-6 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Featured Posts
         </h3>
-        <div className="flex gap-6 flex-col md:flex-row">
+        <div className="flex flex-col gap-6 md:flex-row">
           <BlogPostCard
             title="A Basic Guide for Github Actions"
             slug="basic-guide-github-action"
@@ -55,13 +58,13 @@ export default function Home() {
           />
         </div>
         <Link href="/blog">
-          <a className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
+          <a className="flex h-6 mt-8 leading-7 text-gray-600 transition-all rounded-lg dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">
             Read all posts
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="h-6 w-6 ml-1"
+              className="w-6 h-6 ml-1"
             >
               <path
                 stroke="currentColor"
@@ -73,17 +76,32 @@ export default function Home() {
             </svg>
           </a>
         </Link>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+        <h3 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Projects
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        <p className="mb-8 text-gray-600 dark:text-gray-400">
           Implementing something is the best way to learn something. Here's a
           few of the project I've implemented to learn a particular tech-stack.
         </p>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        {/* <p className="mb-4 text-gray-600 dark:text-gray-400">
           Adding these bits soon!🚀
-        </p>
-
+        </p> */}
+        <ProjectCard
+          href="https://zuck-food.vercel.app"
+          title="Zuck | Order Food Online "
+          projectLogo={Ecommerce}
+          brandColor={'#EA580C'}
+          stack={['typescript', 'nextjs', 'react', 'nodejs', 'mongodb']}
+          description="An food ecommerce store built with amazing UIUX and performance in mind."
+        />
+        <ProjectCard
+          href="https://space-board.vercel.app"
+          title="Spaceboard"
+          projectLogo={SiTwitter}
+          brandColor={'#38BDF8'}
+          stack={['typescript', 'nextjs', 'react']}
+          description="[Building] An instant way of making creatives for your Twitter Space."
+        />
         <span className="h-16" />
       </div>
     </Container>

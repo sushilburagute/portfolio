@@ -5,7 +5,7 @@ import Container from 'components/Container';
 import Subscribe from 'components/Subscribe';
 import ViewCounter from 'components/ViewCounter';
 import type { PropsWithChildren } from 'react';
-import type { Blog } from '.contentlayer/types';
+import type { Blog } from 'contentlayer/generated';
 
 const editUrl = (slug) =>
   `https://github.com/sushilburagute/portfolio/edit/main/data/blog/${slug}.mdx`;
@@ -54,7 +54,7 @@ export default function BlogLayout({
           {children}
         </div>
 
-        <div className="text-sm text-gray-700 dark:text-gray-300 mt-8">
+        <div className="mt-8 text-sm text-gray-700 dark:text-gray-300">
           <a
             href={discussUrl(post.slug)}
             target="_blank"
