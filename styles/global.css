@@ -226,7 +226,3 @@ table {
   overflow-x: auto;
   white-space: nowrap;
 }
-
-.prose .callout > p {
-  margin: 0 !important;
-}
