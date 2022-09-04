@@ -12,10 +12,6 @@ module.exports = withContentlayer()({
       'pbs.twimg.com' // Twitter Profile Picture
     ]
   },
-  experimental: {
-    legacyBrowsers: false,
-    browsersListForSwc: true
-  },
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build
     if (!dev && !isServer) {
